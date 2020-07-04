@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= favicon_link_tag asset_path('favicon.ico') %>
+
+  <title><%= @title %></title>
+  <%= csrf_meta_tags %>
+  <%= render 'shared/meta_tags' %>
+
+  <%= stylesheet_link_tag 'application' %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+  <script src="https://cdn.shopify.com/s/assets/external/app.js?<%= Time.now.strftime('%Y%m%d%H') %>"></script>
+  <%= javascript_include_tag 'application' %>
+</head>
+
+<body>
+  <%= render 'navs/marketing_nav' %>
+  <%= render 'layouts/flash_messages' %>
+  <%= yield %>
+  <%= render 'navs/marketing_footer' %>
+</body>
+
+</html>

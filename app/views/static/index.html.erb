@@ -1,0 +1,118 @@
+<div class="container-fluid bg-white">
+  <div class="row d-flex flex-wrap" style="align-items: center; margin: 100px 0;">
+    <div class="col-md-5 offset-md-1">
+      <h1 class="display-5 font-weight-normal"><b>The Shop App</b></h1>
+      <p class="lead font-weight-normal">For fast Shopify App development</p>
+      <div class="actions">
+        <a class="btn btn-lg btn-primary" href="/admin">Start a free trial</a>
+        <a class="btn btn-lg btn-outline-primary" href="/examples">View Examples</a>
+      </div>
+    </div>
+    <div class="col-md-6 text-center mt-md-5 mt-5">
+      <%
+=begin%>
+ <%= render 'shared/images/hero_image' %> 
+<%
+=end%>
+    </div>
+  </div>
+
+  <div class="row d-flex flex-wrap text-center">
+    <div class="col-md-6 border">
+      <div class="mt-3 mb-4 pt-3">
+        <h2 class="display-5">Create your own events</h2>
+        <p class="lead">Customize your event details, images and any links you need to include</p>
+      </div>
+    </div>
+    <div class="col-md-6 border" style="border-left: 0 !important; border-bottom: 0 !important;">
+      <div class="mt-4 mb-4">
+        <h2 class="display-5">Optimized for mobile</h2>
+        <p class="lead">Your customers are on mobile too</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex flex-wrap text-center">
+    <div class="col-md-6 border" style="border-top: 0 !important;">
+      <div class="mt-3 mb-4 pt-3">
+        <h2 class="display-5">Styles to fit your store <small>beta</small></h2>
+        <p class="lead">Customize the colors, fonts and more on your calendar</p>
+      </div>
+    </div>
+    <div class="col-md-6 border" style="border-left: 0 !important;">
+      <div class="mt-3 mb-4 pt-3">
+        <h2 class="display-5">Seamless Installation</h2>
+        <p class="lead">Install your own calendar widget in less than 1 minute</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin: 80px 0;">
+    <div class="col-md-12">
+      <div class="row text-center">
+        <div class="col">
+          <h2>Features</h2>
+          <p>A calendar to showcase your store, events and promotions</p>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-md-3 offset-md-3">
+          <div class="mb-4">
+              <h5>📱 Mobile Friendly</h5>
+              <p>A calendar that effectively showcases your events in mobile and web</p>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="mb-4">
+              <h5>🖌️ Customizeable</h5>
+              <p>Style your calendar to suit your stores branding</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-3 offset-md-3">
+          <div class="mb-4">
+              <h5>📅 Multi-day events</h5>
+              <p>Showcase your events and promotions over multiple days/weeks/months</p>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="mb-4">
+              <h5>🖐 Multi-purpose</h5>
+              <p>Events, promotions, callouts. Use your calendar for your needs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center" style="margin: 80px 0;">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col">
+          <h2>Pricing</h2>
+          <p>Simple, straightforward pricing.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><%= number_to_currency(ENV["app_price"], locale: :en, precision: 0) %><small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li class="my-3">📅 Unlimited X</li>
+                <li class="my-3">🖌 Custom Y</li>
+                <li class="my-3">👩‍💻 Customer Support</li>
+                <li class="my-3 text-secondary">Added to your monthly Shopify bill</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary mt-3">Get started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
